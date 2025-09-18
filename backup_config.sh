@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 # source: https://github.com/cavazos-apps/truenas-backup-script/blob/main/backup_config.sh
+set -a
+source .env
+set +a
 
 # # # # # # # # # # # # # # # #
 # USER CONFIGURABLE VARIABLES #
-serverURL="..."
-apiKey="..."
+serverURL="${TRUENAS_URL}"
+apiKey="${TRUENAS_APIKEY}"
 secSeed=false
 backuploc="/home/truenas_admin/truenas/backups"
 maxnrOfFiles=5
-gitUrl="..."
+gitUrl="${GIT_URL}"
 
 # # # # # # # # # # # # # # # # # #
 # END USER CONFIGURABLE VARIABLES #
