@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # source: https://github.com/cavazos-apps/truenas-backup-script/blob/main/backup_config.sh
 set -a
-source .env
+source /home/truenas_admin/truenas/backups/.env
 set +a
 
 # # # # # # # # # # # # # # # #
